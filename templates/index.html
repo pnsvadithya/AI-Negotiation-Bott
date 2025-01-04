@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>AI Negotiation Bot</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #1e1e2e;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ff9800;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #f0f0f0;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #2a2a3a;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            box-shadow: 0 0 6px #ff9800;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #4caf50;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #66bb6a;
+        }
+
+        .btn-secondary {
+            background-color: #f44336;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #ef5350;
+        }
+
+        #recordButtonText {
+            background-color: #e91e63;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #recordButtonText:hover {
+            background-color: #ec407a;
+        }
+
+        #results {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #2a2a3a;
+            color: #ffffff;
+        }
+
+        #sentiment-graph-link {
+            margin-top: 15px;
+            display: block;
+            text-align: center;
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #sentiment-graph-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Negotiation Bot</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="customer_name">Customer Name:</label>
+                <input type="text" id="customer_name" name="customer_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user_input">Your Message:</label>
+                <textarea id="user_input" name="user_input" rows="6" required></textarea>
+            </div>
+
+            <div class="button-group">
+                <div id="recordButtonText">Record</div>
+                <button type="button" id="stopButton" class="btn btn-secondary">Stop</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </form>
+
+        <div id="results">
+            <div id="sentiment"></div>
+            <div id="response"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

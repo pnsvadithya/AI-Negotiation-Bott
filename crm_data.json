@@ -1,0 +1,63 @@
+{
+    "Adi": {
+        "name": "Adi",
+        "preferences": "Affordable housing",
+        "purchase_history": ["Apartment in NYC", "Vacation home in Florida"],
+        "last_interaction": "Interested in a 2-bedroom condo"
+    },
+    "abhi": {
+        "name": "abhi",
+        "preferences": "Luxury apartments",
+        "purchase_history": ["Penthouse in Miami"],
+        "last_interaction": "Looking for a beachside property"
+    },
+    "rahul": {
+        "name": "rahul",
+        "preferences": "Family-friendly neighborhoods",
+        "purchase_history": ["Townhouse in Chicago"],
+        "last_interaction": "Searching for a home with a backyard"
+    },
+    "rohan": {
+        "name": "Rohan",
+        "preferences": "Urban lofts",
+        "purchase_history": ["Loft in San Francisco"],
+        "last_interaction": "Interested in a downtown studio"
+    },
+    "anika": {
+        "name": "Anika",
+        "preferences": "Green buildings",
+        "purchase_history": ["Eco-friendly home in Seattle"],
+        "last_interaction": "Exploring options for sustainable living"
+    },
+    "nikhil": {
+        "name": "Nikhil",
+        "preferences": "Investment properties",
+        "purchase_history": ["Duplex in Dallas"],
+        "last_interaction": "Inquiring about rental income potential"
+    },
+    "saanvi": {
+        "name": "Saanvi",
+        "preferences": "Vacation homes",
+        "purchase_history": ["Cottage in the mountains"],
+        "last_interaction": "Looking for properties in tourist areas"
+    },
+    "vikram": {
+        "name": "Vikram",
+        "preferences": "Modern architecture",
+        "purchase_history": ["Contemporary home in Austin"],
+        "last_interaction": "Interested in a newly built home"
+    },
+    "tanya": {
+        "name": "Tanya",
+        "preferences": "Pet-friendly homes",
+        "purchase_history": ["House in Denver"],
+        "last_interaction": "Searching for a rental with a yard"
+    },
+    "arjun": {
+        "name": "Arjun",
+        "preferences": "Affordable housing",
+        "purchase_history": ["Condo in Boston"],
+        "last_interaction": "Inquiring about first-time home buyer programs"
+    }
+}
+
