@@ -60,9 +60,6 @@ The **AI Sales Intelligence and Sentiment-Driven Deal Negotiation Assistant** is
 ## Contributing
 Contributions are welcome! If you have suggestions or improvements, please create a pull request.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Acknowledgments
 - [Streamlit](https://streamlit.io/)
 - [TextBlob](https://textblob.readthedocs.io/en/dev/)
