@@ -1,4 +1,4 @@
-Note-this is only a sample version of the working code, would be working on it to make it more robust and project oriented
+Note-this is only a sample version of the working code, would be working on it to make it more robust and project oriented.
 
 ```markdown
 # AI Negotiation Assistant with Sales Intelligence and Sentiment-Driven Deal tools
@@ -45,9 +45,8 @@ The ** AI Negotiation Assistant with Sales Intelligence and Sentiment-Driven Dea
 
 ## Usage
 1. Run the application:
-   ```bash
    streamlit run app.py
-   ```
+
 
 2. Open your web browser and navigate to `http://localhost:8501`.
 
